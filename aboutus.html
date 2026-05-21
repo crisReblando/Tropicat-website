@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TropiCat Bites | About Us</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ONLY ADDITIONAL SMALL FIX (NO NEW DESIGN SYSTEM) */
+
+.about-hero{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:100px 8%;
+    background:
+    radial-gradient(circle at top left,#eef9ef 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#fff1f3 0%,transparent 35%),
+    white;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h1{
+    font-size:72px;
+    line-height:1.05;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.about-text h1 span{
+    color:var(--primary-green);
+}
+
+.about-text p{
+    font-size:18px;
+    color:#666;
+    max-width:550px;
+    margin-bottom:20px;
+    line-height:1.7;
+}
+
+.about-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:30px;
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.12),
+    0 0 0 12px rgba(255,255,255,0.3);
+}
+
+/* MISSION SECTION MATCHING INDEX SPACING */
+
+.mission{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.mission h2{
+    font-size:48px;
+    margin-bottom:18px;
+}
+
+.mission p{
+    font-size:18px;
+    color:#666;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* SAME GRID STYLE AS INDEX */
+
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+    max-width:1200px;
+    margin:60px auto 0;
+}
+
+.card{
+    background:white;
+    border-radius:28px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:all .45s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:10px;
+    color:var(--primary-green);
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* MOBILE MATCH */
+
+@media(max-width:768px){
+
+    .about-hero{
+        flex-direction:column;
+        text-align:center;
+        padding:70px 6%;
+    }
+
+    .about-text h1{
+        font-size:48px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SAME HEADER (IMPORTANT FOR CONSISTENCY) -->
+<header>
+
+    <div class="header-top">
+        <a href="index.html" class="logo-link">
+            <img src="http://localhost/tropicatBites/wp-content/uploads/2026/05/tropicatlogo.jpg" class="main-logo-img">
+            <div class="logo-text-group">
+                <h1 class="logo">TropiCat <span>BITES</span></h1>
+                <span class="logo-tagline">Premium Cat Treats</span>
+            </div>
+        </a>
+
+        <div class="account-links">
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html" class="active">ABOUT US</a></li>
+            <li><a href="index.html#shop">PRODUCTS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- HERO (SAME STYLE AS INDEX HERO) -->
+<section class="about-hero">
+
+    <div class="about-text">
+        <h1>About <span>Us</span></h1>
+        <p>
+            TropiCat Bites is a proudly Filipino brand creating premium cat treats
+            made with natural tropical ingredients.
+        </p>
+
+        <p>
+            Our goal is simple: give cats healthier, tastier, and safer treats while
+            supporting animal welfare across the Philippines.
+        </p>
+    </div>
+
+    <div class="about-image">
+        <img src="cat1.jpg" alt="About TropiCat">
+    </div>
+
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+
+    <h2>Our Mission</h2>
+    <p>
+        To create high-quality, nutritious cat treats while helping rescued and stray cats in need.
+        Every purchase helps support shelters and feeding programs.
+    </p>
+
+    <div class="values">
+
+        <div class="card">
+            <h3>🐾 Love</h3>
+            <p>Everything starts with compassion for cats.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Natural</h3>
+            <p>Only real, safe, and healthy ingredients.</p>
+        </div>
+
+        <div class="card">
+            <h3>🇵🇭 Local Pride</h3>
+            <p>Proudly made in the Philippines.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TropiCat Bites. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
